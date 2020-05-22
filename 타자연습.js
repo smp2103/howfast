@@ -307,19 +307,19 @@ function showingTier(number) {
         yourTier.innerText=`${tierName[3]}`
         yourTierDescription.innerText=`${tierDescription[3]}` 
         meanSpeedValue.innerText= `${meanSpeed}`
-        paintImage(https://github.com/smp2103/howfast/blob/master/%EC%99%95.PNG?raw=true)   
+        paintImage("https://github.com/smp2103/howfast/blob/master/%EC%99%95.PNG?raw=true")   
     } else if(number>180) {
         yourTier.innerText=`${tierName[2]}`
         yourTierDescription.innerText=`${tierDescription[2]}`
-        paintImage(https://github.com/smp2103/howfast/blob/master/%EC%96%91%EB%B0%98.PNG?raw=true)   
+        paintImage("https://github.com/smp2103/howfast/blob/master/%EC%96%91%EB%B0%98.PNG?raw=true")   
     } else if(number>130) {
         yourTier.innerText=`${tierName[1]}`
         yourTierDescription.innerText=`${tierDescription[1]}`
-        paintImage(https://github.com/smp2103/howfast/blob/master/%ED%8F%89%EB%AF%BC.PNG?raw=true)   
+        paintImage("https://github.com/smp2103/howfast/blob/master/%ED%8F%89%EB%AF%BC.PNG?raw=true")   
     } else {
         yourTier.innerText=`${tierName[0]}`
         yourTierDescription.innerText=`${tierDescription[0]}`
-        paintImage(https://github.com/smp2103/howfast/blob/master/%EB%85%B8%EC%98%88.PNG?raw=true)   
+        paintImage("https://github.com/smp2103/howfast/blob/master/%EB%85%B8%EC%98%88.PNG?raw=true")   
     }
 
 }
