@@ -238,9 +238,9 @@ function showBtn() {
     );
 }
 
-function paintImage(url){
+function paintImage(imgNumber){
     const image = new Image();
-    image.src = `url`;
+    image.src = `${imgNumber}`;
     image.style= `width:104px; height:118.825px`;
     image.id = `abc`;
     modalImage.prepend(image);
