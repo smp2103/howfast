@@ -238,9 +238,9 @@ function showBtn() {
     );
 }
 
-function paintImage(imgNumber){
+function paintImage(url){
     const image = new Image();
-    image.src = `${imgNumber +1}.png`;
+    image.src = `url`;
     image.style= `width:104px; height:118.825px`;
     image.id = `abc`;
     modalImage.prepend(image);
@@ -250,49 +250,77 @@ function showMeanSpeed(number) {
     meanSpeedValue.innerText = `${number}타`;
 }
 // 롤티어########################################################################################
+// function showingTier(number) {
+//     this.tierName = new Array(
+//         "브론즈","실버","골드","플레티넘","다이아","마스터","그랜드마스터","챌린저"
+//     );
+//     this.tierDescription = new Array(
+//         "상위 90%","상위 70%","상위 36%","상위 10.5%","상위 3%","상위 0.05%","상위 0.035%","상위 0.015%"
+//     );
+//     console.log(number);
+//     if(number > 280) {
+//         yourTier.innerText=`${tierName[7]}`
+//         yourTierDescription.innerText=`${tierDescription[7]}` 
+//         meanSpeedValue.innerText= `${meanSpeed}`
+//         paintImage(7)   
+//     } else if(number>260) {
+//         yourTier.innerText=`${tierName[6]}`
+//         yourTierDescription.innerText=`${tierDescription[6]}`
+//         paintImage(6)   
+//     } else if(number>250) {
+//         yourTier.innerText=`${tierName[5]}`
+//         yourTierDescription.innerText=`${tierDescription[5]}`
+//         paintImage(5)   
+//     } else if(number>230) {
+//         yourTier.innerText=`${tierName[4]}`
+//         yourTierDescription.innerText=`${tierDescription[4]}`
+//         paintImage(4)   
+//     } else if(number>200) {
+//         yourTier.innerText=`${tierName[3]}`
+//         yourTierDescription.innerText=`${tierDescription[3]}`
+//         paintImage(3)   
+//     } else if(number>190) {
+//         yourTier.innerText=`${tierName[2]}`
+//         yourTierDescription.innerText=`${tierDescription[2]}`
+//         paintImage(2)   
+//     } else if(number>150) {
+//         yourTier.innerText=`${tierName[1]}`
+//         yourTierDescription.innerText=`${tierDescription[1]}`
+//         paintImage(1)   
+//     } else {
+//         yourTier.innerText=`${tierName[0]}`
+//         yourTierDescription.innerText=`${tierDescription[0]}`
+//         paintImage(0)   
+//     };
+
+
+// }
 function showingTier(number) {
     this.tierName = new Array(
-        "브론즈","실버","골드","플레티넘","다이아","마스터","그랜드마스터","챌린저"
+        "노예","평민","양반","왕"
     );
     this.tierDescription = new Array(
-        "상위 90%","상위 70%","상위 36%","상위 10.5%","상위 3%","상위 0.05%","상위 0.035%","상위 0.015%"
+        "당신의 실력으로 보아 당신은 전생에 노예였음에 틀림없습니다..","당신은 전생에 평민이었군요! 천하지도, 귀하지도 않은 평범한 사람이었군요!","이정도 실력이면 당신은 양반은 되었을 것입니다!","당신의 실력은 전생에 왕이었음을 보여줍니다..!"
     );
     console.log(number);
     if(number > 280) {
-        yourTier.innerText=`${tierName[7]}`
-        yourTierDescription.innerText=`${tierDescription[7]}` 
-        meanSpeedValue.innerText= `${meanSpeed}`
-        paintImage(7)   
-    } else if(number>260) {
-        yourTier.innerText=`${tierName[6]}`
-        yourTierDescription.innerText=`${tierDescription[6]}`
-        paintImage(6)   
-    } else if(number>250) {
-        yourTier.innerText=`${tierName[5]}`
-        yourTierDescription.innerText=`${tierDescription[5]}`
-        paintImage(5)   
-    } else if(number>230) {
-        yourTier.innerText=`${tierName[4]}`
-        yourTierDescription.innerText=`${tierDescription[4]}`
-        paintImage(4)   
-    } else if(number>200) {
         yourTier.innerText=`${tierName[3]}`
-        yourTierDescription.innerText=`${tierDescription[3]}`
-        paintImage(3)   
-    } else if(number>190) {
+        yourTierDescription.innerText=`${tierDescription[3]}` 
+        meanSpeedValue.innerText= `${meanSpeed}`
+        paintImage(https://github.com/smp2103/howfast/blob/master/%EC%99%95.PNG?raw=true)   
+    } else if(number>180) {
         yourTier.innerText=`${tierName[2]}`
         yourTierDescription.innerText=`${tierDescription[2]}`
-        paintImage(2)   
-    } else if(number>150) {
+        paintImage(https://github.com/smp2103/howfast/blob/master/%EC%96%91%EB%B0%98.PNG?raw=true)   
+    } else if(number>130) {
         yourTier.innerText=`${tierName[1]}`
         yourTierDescription.innerText=`${tierDescription[1]}`
-        paintImage(1)   
+        paintImage(https://github.com/smp2103/howfast/blob/master/%ED%8F%89%EB%AF%BC.PNG?raw=true)   
     } else {
         yourTier.innerText=`${tierName[0]}`
         yourTierDescription.innerText=`${tierDescription[0]}`
-        paintImage(0)   
-    };
-
+        paintImage(https://github.com/smp2103/howfast/blob/master/%EB%85%B8%EC%98%88.PNG?raw=true)   
+    }
 
 }
 
