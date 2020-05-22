@@ -297,30 +297,33 @@ function showMeanSpeed(number) {
 // }
 function showingTier(number) {
     this.tierName = new Array(
-        "노예","평민","양반","왕"
+        "똥","노예","평민","양반","왕"
     );
     this.tierDescription = new Array(
-        "당신의 실력으로 보아 당신은 전생에 노예였음에 틀림없습니다..","당신은 전생에 평민이었군요! 천하지도, 귀하지도 않은 평범한 사람이었군요!","이정도 실력이면 당신은 양반은 되었을 것입니다!","당신의 실력은 전생에 왕이었음을 보여줍니다..!"
+        "똥이었군요!","당신의 실력으로 보아 당신은 전생에 노예였음에 틀림없습니다..","당신은 전생에 평민이었군요! 천하지도, 귀하지도 않은 평범한 사람이었군요!","이정도 실력이면 당신은 양반은 되었을 것입니다!","당신의 실력은 전생에 왕이었음을 보여줍니다..!"
     );
     console.log(number);
     if(number > 280) {
-        yourTier.innerText=`${tierName[3]}`
-        yourTierDescription.innerText=`${tierDescription[3]}` 
+        yourTier.innerText=`${tierName[4]}`
+        yourTierDescription.innerText=`${tierDescription[4]}` 
         meanSpeedValue.innerText= `${meanSpeed}`
         paintImage("https://raw.githubusercontent.com/smp2103/howfast/master/%EC%99%95.PNG?token=AOM6PQDDCCDTXYKR7NF2YUK6Y5ZN2")   
     } else if(number>180) {
-        yourTier.innerText=`${tierName[2]}`
-        yourTierDescription.innerText=`${tierDescription[2]}`
+        yourTier.innerText=`${tierName[3]}`
+        yourTierDescription.innerText=`${tierDescription[3]}`
         paintImage("https://raw.githubusercontent.com/smp2103/howfast/master/%EC%96%91%EB%B0%98.PNG?token=AOM6PQF3INXFC24S3YIXQUK6Y5ZO6")   
     } else if(number>130) {
+        yourTier.innerText=`${tierName[2]}`
+        yourTierDescription.innerText=`${tierDescription[2]}`
+        paintImage("https://raw.githubusercontent.com/smp2103/howfast/master/%ED%8F%89%EB%AF%BC.PNG?token=AOM6PQHLRDZVRZ2YHMABDCK6Y5ZQE")   
+    } else if (number>100) {
         yourTier.innerText=`${tierName[1]}`
         yourTierDescription.innerText=`${tierDescription[1]}`
-        paintImage("https://raw.githubusercontent.com/smp2103/howfast/master/%ED%8F%89%EB%AF%BC.PNG?token=AOM6PQHLRDZVRZ2YHMABDCK6Y5ZQE")   
+        paintImage("https://raw.githubusercontent.com/smp2103/howfast/master/%EB%85%B8%EC%98%88.PNG?token=AOM6PQDAAQW4O74FCAPXYHK6Y5ZRE")   
     } else {
         yourTier.innerText=`${tierName[0]}`
         yourTierDescription.innerText=`${tierDescription[0]}`
-        paintImage("https://raw.githubusercontent.com/smp2103/howfast/master/%EB%85%B8%EC%98%88.PNG?token=AOM6PQDAAQW4O74FCAPXYHK6Y5ZRE")   
-    }
+        paintImage("https://raw.githubusercontent.com/smp2103/howfast/master/%EB%98%A5.PNG?token=AOM6PQB65ZCA4RZ2NSKNOTS6Y52XE")   
 
 }
 
