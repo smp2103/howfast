@@ -19,6 +19,37 @@
 	<link rel="stylesheet" href="./modal.css">
 	<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		function shareKakaotalk() {
+			Kakao.init("159e7dec436d8d5624d72c94569cb907");      // 사용할 앱의 JavaScript 키를 설정
+			Kakao.Link.sendDefault({
+				objectType:"feed"
+				, content : {
+					title:"모바일 타자속도 측정기"   // 콘텐츠의 타이틀
+					, description:"내 핸드폰 타자속도는 얼마나 빠를까?"   // 콘텐츠 상세설명
+					, imageUrl:"illidan_stormrage.jpg"   // 썸네일 이미지
+					, link : {
+						mobileWebUrl:"https://www.howfastmobile.com/"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
+						, webUrl:"https://www.howfastmobile.com/" // PC버전 카카오톡에서 사용하는 웹 링크 URL
+					}
+				}
+				, social : {
+					likeCount:0       // LIKE 개수
+					, commentCount:0    // 댓글 개수
+					, sharedCount:0     // 공유 회수
+				}
+				, buttons : [
+					{
+						title:"측정하러가기!"    // 버튼 제목
+						, link : {
+							mobileWebUrl:"https://www.howfastmobile.com/"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
+						, webUrl:"https://www.howfastmobile.com/" // PC버전 카카오톡에서 사용하는 웹 링크 URL
+						}
+					}
+				]
+			});
+		}
+	</script>
 
 
 
