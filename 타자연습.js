@@ -323,7 +323,8 @@ function showingTier(number) {
     } else {
         yourTier.innerText=`${tierName[0]}`
         yourTierDescription.innerText=`${tierDescription[0]}`
-        paintImage("https://raw.githubusercontent.com/smp2103/howfast/master/%EB%98%A5.PNG?token=AOM6PQB65ZCA4RZ2NSKNOTS6Y52XE")   
+        paintImage("https://raw.githubusercontent.com/smp2103/howfast/master/%EB%98%A5.PNG?token=AOM6PQB65ZCA4RZ2NSKNOTS6Y52XE")
+    }
 
 }
 
