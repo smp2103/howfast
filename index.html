@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167351507-1"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'UA-167351507-1');
+	</script>
+	<title> 모바일 타자측정 </title>
+	<meta http-equiv="X-UA-Compatible" content ="ie=edge">
+	<meta name="viewport" content="width = device-width, initial-scale= 1,user-scalable=no, maximum-scale=1, minimum-scale =1">
+	<meta name="title" content="모바일 타자측정">
+	<meta name="subject" content ="내 핸드폰 타자속도는 상위 몇프로?">
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./modal.css">
+	<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body onload="httd.setHttd()">
+	<!-- 타자측정 -->
+	<h3>내 모바일 타자 속도는?</h3>
+	<h6>세 문장 단위로 결과가 출력됩니다.</h6>
+	<h6>마지막에 엔터를치면 다음 문장으로 넘어갑니다.</h6>
+	<h6 style="margin-bottom:10px;">챌린저에 도전해보세요!</h6>
+
+	<div class="wrap">
+		<button class="js-open btn-open is-active">결과창</button>
+		<div class="modal js-modal">
+			<div class="modal-image">
+				<div></div>
+			</div>
+			<h1 class="yourTier"></h1>
+			<p class="yourTierDescription"></p>
+			<p class="meanSpeedValue"></p>
+			<button class="js-close">다시하기</button>
+			<div class="addthis_inline_share_toolbox" style= "margin:10px;"></div>
+		</div>
+	</div>
+
+	<div id="httdBox">
+
+		<div id="exString" class="smallBox"></div>
+		
+		<div class="ph"></div>
+
+		<div class="smallBox">
+			<input type="text" class="textbox" id="httdInputString" onkeypress="return httd.keyUp()" onkeyup="httd.chkMiss()" onkeydown="httd.chkTime()">
+		</div>
+
+		<div class="ph"></div>
+		
+		<div id="status" class="smallBox">
+			<table width="100%">
+				<col width="80">
+				<col width="">
+				<col width="80">
+				<tr>
+					<th>정확도</th>
+					<td>
+						<div class="barBgcolor">
+							<div id="barAccuracyCur" class="bar" style="background-color:#33ccff"></div>
+						</div>
+					</td>
+					<td class="nums">
+						<span id="prnAccuracyCur">0</span>%
+					</td>
+				</tr>
+				<tr>
+					<th>평균 정확도</th>
+					<td>
+						<div class="barBgcolor">
+							<div id="barAccuracyTotal" class="bar" style="background-color:#3399cc"></div>
+						</div>
+					</td>
+					<td class="nums">
+						<span id="prnAccuracyTotal">0</span>%
+					</td>
+				</tr>
+				<tr>
+					<th>현재 속도</th>
+					<td>
+						<div class="barBgcolor">
+							<div id="barSpeedCur" class="bar" style="background-color:#ffcc33"></div>
+						</div>
+					</td>
+					<td class="nums">
+						<span id="prnSpeedCur">0</span>타/분
+					</td>
+				</tr>
+				<tr>
+					<th>최고 속도</th>
+					<td>
+						<div class="barBgcolor">
+							<div id="barSpeedMax" class="bar" style="background-color:#cc9933"></div>
+						</div>
+					</td>
+					<td class="nums">
+						<span id="prnSpeedMax">0</span>타/분
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- <div class="wrap">
+		<button class="js-open btn-open is-active">결과창</button>
+		<div class="modal js-modal">
+			<div class="modal-image">
+				<div></div>
+			</div>
+			<h1 class="yourTier"></h1>
+			<p class="yourTierDescription"></p>
+			<button class="js-close">다시하기</button>
+		</div>
+	</div> -->
+
+	
+
+
+
+	
+
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec747ddf3ba5470"></script>
+	<script src="./타자연습.js">
+
+	// Copyright (c) 2020 by Philipp Rappold (https://codepen.io/rppld/pen/vOvdyQ)
+
+	// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+	// documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+	// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the following conditions:
+
+	// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+	// Software.
+
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+	// WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+	// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+	</script>
+	<script src="./dynamics.js">
+	// The MIT License (MIT)
+	// Copyright (c) 2015 Michael Villar
+
+	// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+	// documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the
+	// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the following conditions:
+
+	// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+	// Software.
+
+	// THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+	// WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+	// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+	</script>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+
+
+
+
+
+
+
+
+</body>
+</html>

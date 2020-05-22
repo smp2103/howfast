@@ -1,0 +1,45 @@
+header {
+    height:50px;
+}
+
+#httdBox {width:100%;}
+#httdBox .smallBox {background-color:#f5f5f5;border:1px solid #cccccc;padding:2px;font-size:9pt;font-family:'malgun gothic';text-align:center;}
+#httdBox .ph {height:4px;font-size:0px;}
+#httdBox .textbox {width:95%;border:0px;background-color:#f5f5f5;text-align:center;outline:none}
+#httdBox #status th{font-size:9pt;}
+#httdBox #status .bar {width:0px;font-size:0px;height:18px;}
+#httdBox #status .nums {font-size:9pt;height:18px;}
+#httdBox #status .barBgcolor {background-color:#cccccc}
+
+
+h3 {
+    text-align: center;
+    font-family: 'Gamja Flower', cursive;
+}
+h6 {
+    text-align: center;
+    font-family: 'Gamja Flower', cursive;
+    margin : 5px;
+}
+th {
+    font-family: 'Gamja Flower', cursive;
+
+}
+td {
+    font-family: 'Gamja Flower', cursive;
+
+}
+
+
+
+#httdBox {
+    margin-top : 15%;
+    margin-bottom: 10%;
+
+    
+}
+
+
+
+
+
