@@ -61,11 +61,11 @@ p {
 
 button {
     margin: 0 auto;
-    font-size: 1.25em;
+    font-size: 0.8em;
     font-weight: bold;
     background-color: #000;
     border: none;
-    padding: 0.5em 1em;
+    padding: 0.3em 0.5em;
     color: #fff;
     box-shadow: 0 0 0 2px #000 inset;
     border-radius: 0.25em;
