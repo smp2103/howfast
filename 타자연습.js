@@ -13,28 +13,6 @@ const modalImage = document.querySelector(".modal-image");
 var meanSpeedValue = document.querySelector(".meanSpeedValue");
 
 
-// function preloading (imageArray) {
-//     let n = imageArray.length;
-//     for( let i =0; i<n; i++) {
-//         let img = new Image();
-//         img.src = imageArray[i];
-//     }
-//     console.log(1);
-// }
-
-// preloading([
-    
-//     'file:///C:/Users/%EB%B0%95%EC%83%81%EB%AF%BC/Desktop/HTML_CSS/JAVASCRIPT/%ED%83%80%EC%9E%90%EC%B8%A1%EC%A0%95%EA%B8%B0/%ED%83%80%EC%9E%90%EC%97%B0%EC%8A%B5/img/1.png',
-//     'file:///C:/Users/%EB%B0%95%EC%83%81%EB%AF%BC/Desktop/HTML_CSS/JAVASCRIPT/%ED%83%80%EC%9E%90%EC%B8%A1%EC%A0%95%EA%B8%B0/%ED%83%80%EC%9E%90%EC%97%B0%EC%8A%B5/img/2.png',
-//     'file:///C:/Users/%EB%B0%95%EC%83%81%EB%AF%BC/Desktop/HTML_CSS/JAVASCRIPT/%ED%83%80%EC%9E%90%EC%B8%A1%EC%A0%95%EA%B8%B0/%ED%83%80%EC%9E%90%EC%97%B0%EC%8A%B5/img/3.png',
-//     'file:///C:/Users/%EB%B0%95%EC%83%81%EB%AF%BC/Desktop/HTML_CSS/JAVASCRIPT/%ED%83%80%EC%9E%90%EC%B8%A1%EC%A0%95%EA%B8%B0/%ED%83%80%EC%9E%90%EC%97%B0%EC%8A%B5/img/4.png',
-//     'file:///C:/Users/%EB%B0%95%EC%83%81%EB%AF%BC/Desktop/HTML_CSS/JAVASCRIPT/%ED%83%80%EC%9E%90%EC%B8%A1%EC%A0%95%EA%B8%B0/%ED%83%80%EC%9E%90%EC%97%B0%EC%8A%B5/img/5.png',
-//     'file:///C:/Users/%EB%B0%95%EC%83%81%EB%AF%BC/Desktop/HTML_CSS/JAVASCRIPT/%ED%83%80%EC%9E%90%EC%B8%A1%EC%A0%95%EA%B8%B0/%ED%83%80%EC%9E%90%EC%97%B0%EC%8A%B5/img/6.png',
-//     'file:///C:/Users/%EB%B0%95%EC%83%81%EB%AF%BC/Desktop/HTML_CSS/JAVASCRIPT/%ED%83%80%EC%9E%90%EC%B8%A1%EC%A0%95%EA%B8%B0/%ED%83%80%EC%9E%90%EC%97%B0%EC%8A%B5/img/7.png',
-//     'file:///C:/Users/%EB%B0%95%EC%83%81%EB%AF%BC/Desktop/HTML_CSS/JAVASCRIPT/%ED%83%80%EC%9E%90%EC%B8%A1%EC%A0%95%EA%B8%B0/%ED%83%80%EC%9E%90%EC%97%B0%EC%8A%B5/img/8.png',
-// ])
-
-
 
 
 function Httd() {
