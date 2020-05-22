@@ -262,7 +262,7 @@ function showBtn() {
 
 function paintImage(imgNumber){
     const image = new Image();
-    image.src = `img/${imgNumber +1}.png`;
+    image.src = `${imgNumber +1}.png`;
     image.style= `width:104px; height:118.825px`;
     image.id = `abc`;
     modalImage.prepend(image);
