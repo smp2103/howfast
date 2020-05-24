@@ -247,7 +247,7 @@ function paintImage(imgNumber){
 
 }
 function showMeanSpeed(number) {
-    meanSpeedValue.innerText = `${number}타`;
+    meanSpeedValue.innerText = `평균 ${number}타시군요!`;
 }
 // 롤티어########################################################################################
 // function showingTier(number) {
