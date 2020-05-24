@@ -302,15 +302,15 @@ function showingTier(number) {
         yourTierDescription.innerText=`${tierDescription[4]}` 
         meanSpeedValue.innerText= `${meanSpeed}`
         paintImage("왕.PNG")   
-    } else if(number>360) {
+    } else if(number>320) {
         yourTier.innerText=`${tierName[3]}`
         yourTierDescription.innerText=`${tierDescription[3]}`
         paintImage("양반.PNG")   
-    } else if(number>300) {
+    } else if(number>200) {
         yourTier.innerText=`${tierName[2]}`
         yourTierDescription.innerText=`${tierDescription[2]}`
         paintImage("평민.PNG")   
-    } else if (number>150) {
+    } else if (number>100) {
         yourTier.innerText=`${tierName[1]}`
         yourTierDescription.innerText=`${tierDescription[1]}`
         paintImage("노예.PNG")   
