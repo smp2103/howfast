@@ -303,20 +303,20 @@ function showingTier(number) {
         "똥이었군요!","당신의 실력으로 보아 당신은 전생에 노예였음에 틀림없습니다..","당신은 전생에 평민이었군요! 천하지도, 귀하지도 않은 평범한 사람이었군요!","이정도 실력이면 당신은 양반은 되었을 것입니다!","당신의 실력은 전생에 왕이었음을 보여줍니다..!"
     );
     console.log(number);
-    if(number > 280) {
+    if(number > 360) {
         yourTier.innerText=`${tierName[4]}`
         yourTierDescription.innerText=`${tierDescription[4]}` 
         meanSpeedValue.innerText= `${meanSpeed}`
         paintImage("왕.PNG")   
-    } else if(number>180) {
+    } else if(number>330) {
         yourTier.innerText=`${tierName[3]}`
         yourTierDescription.innerText=`${tierDescription[3]}`
         paintImage("양반.PNG")   
-    } else if(number>130) {
+    } else if(number>300) {
         yourTier.innerText=`${tierName[2]}`
         yourTierDescription.innerText=`${tierDescription[2]}`
         paintImage("평민.PNG")   
-    } else if (number>100) {
+    } else if (number>150) {
         yourTier.innerText=`${tierName[1]}`
         yourTierDescription.innerText=`${tierDescription[1]}`
         paintImage("노예.PNG")   
