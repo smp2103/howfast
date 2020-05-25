@@ -291,13 +291,18 @@ function showMeanSpeed(number) {
 // }
 function showingTier(number) {
     this.tierName = new Array(
-        "똥","노예","평민","양반","왕"
+        "똥","노예","평민","양반","왕","사기꾼"
     );
     this.tierDescription = new Array(
-        "똥이었군요!","당신의 실력으로 보아 당신은 전생에 노예였음에 틀림없습니다..","당신은 전생에 평민이었군요! 천하지도, 귀하지도 않은 평범한 사람이었군요!","이정도 실력이면 당신은 양반은 되었을 것입니다!","당신의 실력은 전생에 왕이었음을 보여줍니다..!"
+        "똥이었군요!","당신의 실력으로 보아 당신은 전생에 노예였음에 틀림없습니다..","당신은 전생에 평민이었군요! 천하지도, 귀하지도 않은 평범한 사람이었군요!","이정도 실력이면 당신은 양반은 되었을 것입니다!","당신의 실력은 전생에 왕이었음을 보여줍니다..!","당신은 전생에 사기꾼이었군요..? 편법을 쓰는 걸 좋아하는군요!"
     );
     console.log(number);
-    if(number > 400) {
+    if(number > 1000) {
+        yourTier.innerText=`${tierName[5]}`
+        yourTierDescription.innerText=`${tierDescription[5]}`
+        meanSpeedValue.innerText = `${meanSpeed}`
+        paintImage("사기꾼.PNG")
+    } else if(number > 400) {
         yourTier.innerText=`${tierName[4]}`
         yourTierDescription.innerText=`${tierDescription[4]}` 
         meanSpeedValue.innerText= `${meanSpeed}`
