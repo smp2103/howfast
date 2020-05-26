@@ -34,9 +34,12 @@ td {
 
 #httdBox {
     margin-top : 15%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 
     
+}
+.kakao_ad_area {
+    display: block;
 }
 
 
