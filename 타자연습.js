@@ -313,11 +313,11 @@ function showingTier(number) {
         yourTierDescription.innerText=`${tierDescription[4]}` 
         meanSpeedValue.innerText= `${meanSpeed}`
         paintImage("왕.PNG")   
-    } else if(number>320) {
+    } else if(number>280) {
         yourTier.innerText=`${tierName[3]}`
         yourTierDescription.innerText=`${tierDescription[3]}`
         paintImage("양반.PNG")   
-    } else if(number>200) {
+    } else if(number>150) {
         yourTier.innerText=`${tierName[2]}`
         yourTierDescription.innerText=`${tierDescription[2]}`
         paintImage("평민.PNG")   
