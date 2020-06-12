@@ -11,6 +11,11 @@ header {
 #httdBox #status .nums {font-size:9pt;height:18px;}
 #httdBox #status .barBgcolor {background-color:#cccccc}
 
+h1 {
+    text-align: center;
+    font-family: 'Gamja Flower', cursive;
+    color : blue;
+}
 
 h3 {
     text-align: center;
